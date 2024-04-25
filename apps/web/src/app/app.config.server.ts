@@ -11,8 +11,9 @@ const serverConfig: ApplicationConfig = {
         multi: true,
         useValue: [
             {
-                path: 'shell',
-                loadComponent: () => import('@nx-cleanarch-spotify/shell').then(m => m.ShellComponent)
+                path: '',
+                loadComponent: () => import('@nx-cleanarch-spotify/shell').then(m => m.ShellComponent),
+                loadChildren: () => import('@nx-cleanarch-spotify/shell').then(m => m.shellRoutes)
             }
         ]
     }
