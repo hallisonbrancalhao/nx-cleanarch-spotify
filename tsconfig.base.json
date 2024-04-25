@@ -15,7 +15,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@nx-cleanarch-spotify/api": ["libs/collection/api/src/index.ts"],
       "@nx-cleanarch-spotify/content": ["libs/main/ui-content/src/index.ts"],
+      "@nx-cleanarch-spotify/data-access": [
+        "libs/collection/data-access/src/index.ts"
+      ],
+      "@nx-cleanarch-spotify/domain": ["libs/collection/domain/src/index.ts"],
       "@nx-cleanarch-spotify/home": ["libs/main/feature-home/src/index.ts"],
       "@nx-cleanarch-spotify/navbar": ["libs/main/ui-navbar/src/index.ts"],
       "@nx-cleanarch-spotify/player": ["libs/main/feature-player/src/index.ts"],
