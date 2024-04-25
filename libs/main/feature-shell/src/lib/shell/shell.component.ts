@@ -8,7 +8,13 @@ import { NavbarComponent } from '@nx-cleanarch-spotify/navbar';
 @Component({
   selector: 'lib-shell',
   standalone: true,
-  imports: [CommonModule, RouterModule, PlayerComponent, ContentComponent, NavbarComponent],
+  imports: [
+    CommonModule,
+    RouterModule,
+    PlayerComponent,
+    ContentComponent,
+    NavbarComponent,
+  ],
   templateUrl: './shell.component.html',
   styleUrl: './shell.component.scss',
 })
