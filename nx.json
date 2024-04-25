@@ -15,7 +15,7 @@
     ],
     "sharedGlobals": []
   },
-  "nxCloudAccessToken": "YzhlNTNlYzEtMWFhZC00M2VmLTljMjUtOTQyM2Q2MmU0MTZkfHJlYWQtd3JpdGU=",
+  "nxCloudAccessToken": "OGY2OGE2MzQtZTExOS00ZDU3LTlhY2QtNTk1NTA1ZGIyY2UwfHJlYWQtd3JpdGU=",
   "targetDefaults": {
     "@angular-devkit/build-angular:application": {
       "cache": true,
@@ -34,15 +34,8 @@
     "@nx/jest:jest": {
       "cache": true,
       "inputs": ["default", "^production", "{workspaceRoot}/jest.preset.js"],
-      "options": {
-        "passWithNoTests": true
-      },
-      "configurations": {
-        "ci": {
-          "ci": true,
-          "codeCoverage": true
-        }
-      }
+      "options": { "passWithNoTests": true },
+      "configurations": { "ci": { "ci": true, "codeCoverage": true } }
     }
   },
   "generators": {
@@ -52,13 +45,8 @@
       "style": "scss",
       "unitTestRunner": "jest"
     },
-    "@nx/angular:library": {
-      "linter": "eslint",
-      "unitTestRunner": "jest"
-    },
-    "@nx/angular:component": {
-      "style": "scss"
-    }
+    "@nx/angular:library": { "linter": "eslint", "unitTestRunner": "jest" },
+    "@nx/angular:component": { "style": "scss" }
   },
   "plugins": [
     {
