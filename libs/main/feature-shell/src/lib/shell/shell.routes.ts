@@ -6,4 +6,11 @@ export const shellRoutes: Route[] = [
     loadComponent: () =>
       import('@nx-cleanarch-spotify/home').then((m) => m.HomeComponent),
   },
+  {
+    path: 'collections',
+    loadComponent: () =>
+      import('@nx-cleanarch-spotify/collection').then(
+        (m) => m.CollectionComponent
+      ),
+  }
 ];
