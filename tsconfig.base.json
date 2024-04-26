@@ -27,6 +27,12 @@
       "@nx-cleanarch-spotify/home": ["libs/main/feature-home/src/index.ts"],
       "@nx-cleanarch-spotify/navbar": ["libs/main/ui-navbar/src/index.ts"],
       "@nx-cleanarch-spotify/player": ["libs/main/feature-player/src/index.ts"],
+      "@nx-cleanarch-spotify/shared-data-access": [
+        "libs/shared/data-access/src/index.ts"
+      ],
+      "@nx-cleanarch-spotify/shared-util-core": [
+        "libs/shared/util-core/src/index.ts"
+      ],
       "@nx-cleanarch-spotify/shell": ["libs/main/feature-shell/src/index.ts"]
     }
   },
