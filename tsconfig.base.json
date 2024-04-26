@@ -16,6 +16,9 @@
     "baseUrl": ".",
     "paths": {
       "@nx-cleanarch-spotify/api": ["libs/collection/api/src/index.ts"],
+      "@nx-cleanarch-spotify/collection": [
+        "libs/collection/feature-collection/src/index.ts"
+      ],
       "@nx-cleanarch-spotify/content": ["libs/main/ui-content/src/index.ts"],
       "@nx-cleanarch-spotify/data-access": [
         "libs/collection/data-access/src/index.ts"
