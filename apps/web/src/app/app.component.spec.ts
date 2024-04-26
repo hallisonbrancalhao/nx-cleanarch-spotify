@@ -9,10 +9,10 @@ describe('AppComponent', () => {
     }).compileComponents();
   });
 
-  it('should render title', () => {
+  it('should render router outlet', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Welcome web');
+    const compiled = fixture.nativeElement;
+    expect(compiled.querySelector('router-outlet')).toBeTruthy();
   });
 });
