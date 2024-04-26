@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { sharedUtilCore } from '@nx-cleanarch-spotify/shared-util-core';
 
 @Component({
   selector: 'lib-player',
@@ -8,4 +9,6 @@ import { CommonModule } from '@angular/common';
   templateUrl: './player.component.html',
   styleUrl: './player.component.scss',
 })
-export class PlayerComponent {}
+export class PlayerComponent {
+  sharedUtilCoreValue = sharedUtilCore();
+}
