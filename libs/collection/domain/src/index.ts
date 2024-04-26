@@ -1,1 +1,1 @@
-export * from './lib/domain';
+export * from './lib/collection-domain';

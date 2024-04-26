@@ -1,1 +1,1 @@
-export * from './lib/data-access';
+export * from './lib/collection-data-access';
